@@ -78,7 +78,7 @@ Click the wallpaper icon in the top bar:
 The preferences window has two pages.
 
 **Wallpapers**
-- *Installed*: your dynamic wallpapers (user and system ones). **Apply** sets one as the current wallpaper, **Remove** deletes its images and files (user wallpapers only; system ones installed with `--global` must be removed with `uninstall.sh`).
+- *Installed*: your dynamic wallpapers (user and system ones). **Apply** sets one as the current wallpaper, **Edit** (wallpapers made with the *Create* page) reopens it in the *Create* page with its image and settings, **Remove** deletes its images and files (user wallpapers only; system ones installed with `--global` must be removed with `uninstall.sh`).
 - *Catalog*: the ready-made wallpapers of the [gallery](#wallpaper-gallery). **Install** downloads and installs one in `~/.local/share` (same as `install.sh`).
 
 **Create**
@@ -86,6 +86,8 @@ The preferences window has two pages.
 2. In *Variants*, select a variant to edit it: its name, the **hour** at which it is fully shown, and its tone (brightness, contrast, saturation, tint color and strength). Add or remove variants, or restore the default ones (night, dawn, morning, noon, sunset, dusk).
 3. *Preview* shows the selected variant; enable **Simulate a Day** to see the wallpaper at any time of day, transitions included, or press play to run through the whole day.
 4. In *Creation*, give the wallpaper a name, set the transition length and click **Create**. With **Apply After Creation** enabled, it becomes your wallpaper right away.
+
+To change a wallpaper you created, click **Edit** next to it on the *Wallpapers* page: its image, variants, name and transition are loaded back in the *Create* page. Adjust anything (you can even drop another image), then click **Save Changes** — renaming it replaces the old one. Click **New Wallpaper** in the banner to leave edit mode. The source image and settings are kept in `project.json` next to the frames; wallpapers created before this feature can't be edited.
 
 A variant is fully visible at its hour, stays static, then fades into the next one, finishing at the next variant's hour (the fade is capped by the gap between the two hours).
 
